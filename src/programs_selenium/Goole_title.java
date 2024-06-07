@@ -14,12 +14,12 @@ public static void main(String[] args) {
  driver.manage().window().maximize();
  driver.get("https://www.Google.com");
  //driver.findElement(By.name("q")).sendKeys("India");
- /*WebElement india = driver.findElement(By.name("q"));
+ WebElement india = driver.findElement(By.name("q"));
  india.sendKeys("India");
- india.sendKeys(Keys.ENTER);*/
+ india.sendKeys(Keys.ENTER);
  
- WebElement in =driver.findElement(By.cssSelector("#APjFqb"));
- in.sendKeys("India");
+/* WebElement in =driver.findElement(By.cssSelector("#APjFqb"));
+ in.sendKeys("India");*/
  
  }
 

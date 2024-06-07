@@ -32,12 +32,15 @@ public class Amazon_1stMobile_select {
 	
 	Set<String> s1= driver.getWindowHandles();
     System.out.println(s1);
-    driver.close();
+    //driver.close();
    Iterator<String> itr= s1.iterator();
    String parentid =itr.next();
    String childid = itr.next();
    System.out.println(parentid);
    System.out.println(childid);
+   driver.switchTo().window(childid);
+   WebElement cart = driver.findElement(By.xpath("//input[@id ='add-to-cart-button']"));
+   cart.click();
 	}
 
 }
