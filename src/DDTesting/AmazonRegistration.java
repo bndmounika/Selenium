@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -35,6 +36,7 @@ public class AmazonRegistration {
 	WebElement pswd3= driver.findElement(By.xpath("//input[@name='passwordCheck']"));
 	pswd3.sendKeys(passw);
 	
+
 	}
 
 }

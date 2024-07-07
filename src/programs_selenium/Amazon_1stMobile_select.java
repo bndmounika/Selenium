@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import graphql.Assert;
+
 public class Amazon_1stMobile_select {
 
 	public static void main(String[] args) {
@@ -32,6 +34,8 @@ public class Amazon_1stMobile_select {
 	
 	Set<String> s1= driver.getWindowHandles();
     System.out.println(s1);
+    System.out.println(s1.size());
+   
     //driver.close();
    Iterator<String> itr= s1.iterator();
    String parentid =itr.next();

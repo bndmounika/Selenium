@@ -1,5 +1,7 @@
 package DropDown;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,6 +19,9 @@ public class Dropdown4 {
 	    WebElement  Choice4= driver.findElement(By.xpath("(//select[@name='Choice4'])[1]"));
 	    Select s1 = new Select(Choice4);
 	    s1.selectByVisibleText("Energy15");
+	  List<WebElement> count =  s1.getOptions();
+	  int dropdownlist = count.size();
+	  System.out.println(dropdownlist);
 	}
 
 }
